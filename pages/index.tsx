@@ -31,7 +31,7 @@ export default function HomePage() {
             textAlign="center"
           >
             <Highlight
-              query="MBTI"
+              query="高考青春复盘"
               styles={{
                 py: 1,
                 px: 4,
@@ -40,14 +40,14 @@ export default function HomePage() {
                 color: "white",
               }}
             >
-              参加 MBTI 性格测试 
+              参加 高考青春复盘测试 
             </Highlight>
           </Heading>
           <Text
             fontSize="xl"
             align="center"
           >
-            通过这个性格测试更好地了解自己
+            2026年高考刚刚落下帷幕。花3分钟测测你当下的精神状态，看看在生活这个草台班子里，你究竟是扛下所有的&quot;不死牛马&quot;，还是果断掀桌的&quot;一代悍匪&quot;。
           </Text>
           <Link href="/test">
             <Button

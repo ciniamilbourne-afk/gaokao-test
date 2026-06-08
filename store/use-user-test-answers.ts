@@ -1,10 +1,8 @@
 import create from "zustand";
 
-import { TestAnswerOption } from "../lib/personality-test";
-
 interface UserTestAnswersState {
-  userTestAnswers: TestAnswerOption["type"][];
-  setUserTestAnswers: (newUserTestAnswers: TestAnswerOption["type"][]) => void;
+  userTestAnswers: string[];
+  setUserTestAnswers: (newUserTestAnswers: string[]) => void;
 }
 
 const useUserTestAnswersStore = create<UserTestAnswersState>((set) => ({

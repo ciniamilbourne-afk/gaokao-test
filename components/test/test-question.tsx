@@ -7,8 +7,7 @@ import TestAnswerOption from "./test-answer-option";
 
 import { personalityTest } from "../../data/personality-test";
 import {
-  TestAnswerOption as TestAnswer,
-  getQuestionAnswerScore,
+  calculateTestResult,
   saveTestResult,
 } from "../../lib/personality-test";
 import useUserTestAnswersStore from "../../store/use-user-test-answers";
@@ -30,8 +29,7 @@ export default function TestQuestion() {
     onChange: (value) => {
       const newUserTestAnswers = [...userTestAnswers];
 
-      newUserTestAnswers[currentPersonalityTestIndex] =
-        value as TestAnswer["type"];
+      newUserTestAnswers[currentPersonalityTestIndex] = value;
 
       setUserTestAnswers(newUserTestAnswers);
 
@@ -72,13 +70,12 @@ export default function TestQuestion() {
 
   function handleSeeResultButtonClick() {
     const timestamp = Date.now();
-    const testScores = userTestAnswers.map((answer, index) =>
-      getQuestionAnswerScore(index + 1, answer)
-    );
+    const { scores, resultType } = calculateTestResult(userTestAnswers);
 
     saveTestResult({
       testAnswers: userTestAnswers,
-      testScores,
+      testScores: scores,
+      resultType,
       timestamp,
     })
       .tap(() => {
