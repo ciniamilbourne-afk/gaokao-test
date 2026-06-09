@@ -19,17 +19,13 @@ jobs:
       - name: Install dependencies
         run: npm install --ignore-scripts
         
-      - name: Build
-        run: npm run build
-        
-      - name: Copy static files
+      - name: Build and Export
         run: |
-          mkdir -p deploy
-          cp -r out/server/pages/* deploy/
-          cp -r public/* deploy/ 2>/dev/null || true
+          npm run build
+          npm run export
           
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./deploy
+          publish_dir: ./out
