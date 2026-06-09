@@ -26,7 +26,7 @@ export default function Nav() {
             fontWeight="bold"
             textTransform="uppercase"
           >
-            MBTI 性格测试
+            高考青春复盘测试
           </Button>
         </Link>
         {/* GitHub Repo stars */}

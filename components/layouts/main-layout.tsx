@@ -14,10 +14,10 @@ export default function MainLayout(props: MainLayoutProps) {
   return (
     <>
       <Head>
-        <title>MBTI 性格测试</title>
+        <title>高考青春复盘测试</title>
         <meta
           name="description"
-          content="MBTI 性格测试"
+          content="2026年高考青春复盘测试 - 测测你从当年的考场走到如今的社会，究竟进化出了怎样的人格状态"
         />
         <meta
           name="viewport"
