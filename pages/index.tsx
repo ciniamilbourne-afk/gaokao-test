@@ -47,7 +47,29 @@ export default function HomePage() {
             fontSize="xl"
             align="center"
           >
-            2026年高考刚刚落下帷幕。花3分钟测测你当下的精神状态，看看在生活这个草台班子里，你究竟是扛下所有的&quot;不死牛马&quot;，还是果断掀桌的&quot;一代悍匪&quot;。
+            2026 年高考刚刚落幕。看着热搜上被数学新题型逼疯的应届生，你是不是暗自庆幸自己早生了几年？但摸着良心讲，成年人的世界，真的比当年那张理综卷子容易吗？
+          </Text>
+          <Text
+            fontSize="lg"
+            align="center"
+            color="gray.600"
+          >
+            假如时光倒流，让你带着现在的记忆重被塞回高三考场，你会交出一份怎样的答卷？
+          </Text>
+          <Text
+            fontSize="lg"
+            align="center"
+            color="gray.600"
+          >
+            请预留 8 - 10 分钟，给自己一场直击灵魂的青春复盘。测测你从当年的考场走到如今的社会，究竟进化出了怎样的人格状态：是练就了物理防御的&quot;不死牛马&quot;，还是蜕变成了敢于掀桌的&quot;一代悍匪&quot;？
+          </Text>
+          <Text
+            fontSize="md"
+            align="center"
+            color="gray.500"
+            fontStyle="italic"
+          >
+            生活没有标准答案。点击开始，重新确认现在的自己。
           </Text>
           <Link href="/test">
             <Button

@@ -70,9 +70,10 @@ export default function TestResult(props: TestResultProps) {
 
       <Image
         alt="illustration"
-        src={`/images/mbti/${personalityClassGroup.type.toLocaleUpperCase()}.png`}
+        src={`/images/characters/${personalityClassGroup.type}.png`}
         width={200}
         height={200}
+        style={{ borderRadius: "12px" }}
       />
 
       <Divider />
@@ -515,7 +516,7 @@ export default function TestResult(props: TestResultProps) {
         <Text fontSize="md" mb={4}>
           信息差，才是这个社会最残酷的考题。尤其对于三四线城市的普通家庭，不被虚假宣传忽悠、实事求是地看清专业的真相，是突围的唯一捷径。
         </Text>
-        <Button w="full" colorScheme="red" size="lg">
+        <Button w="full" colorScheme="red" size="lg" onClick={() => router.push('/guide')}>
           👉 获取《2026未来专业与职业真相防坑指南》
         </Button>
       </Box>

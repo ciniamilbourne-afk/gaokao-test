@@ -55,6 +55,7 @@ export interface PersonalityClassGroup {
   tenRulesToLive: string[];
   letter: string;
   gaokaoEcho: string;
+  quote?: string;
 }
 
 export interface TestResult {
